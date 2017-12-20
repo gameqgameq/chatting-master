@@ -16,7 +16,7 @@ const http = require('http');
   
   const app = express();
   // const linebotParser = bot.parser();
-  app.post('/', linebotParser);
+  // app.post('/', linebotParser);
   
 var server = http.createServer(function(req, res) {
     
