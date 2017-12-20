@@ -1,20 +1,12 @@
 {
-  "name": "chatting-master",
+  "name": "chatting",
   "version": "1.0.0",
-  "description": "chat",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "none"
-  },
-  "author": "gameqgameq",
-  "license": "MIT",
-  "dependencies": {
-    "express": "^4.16.2",
-    "http": "0.0.0",
-    "linebot": "^1.3.0"
-  }
+  "author": "Vivian",
+  "license": "ISC"
 }
