@@ -1,22 +1,22 @@
-// var linebot = require('linebot');
+var linebot = require('linebot');
 var express = require('express');
 const http = require('http');
 
 //使用套件
 
-// var bot = linebot({
-//   channelId: '1552347114',
-//   channelSecret: 'b76d2078d71935667f27238d8da103c1',
-//   channelAccessToken: 'vDHD4iL1z8k1RzzvACAVl2y6fhH22jD2XOfEUGXd9F4J3BbaWAB44eBZAXhuyDF0T0GDaBh1Hsk/Zi4kXyty57Y45JzbdEL+IrAXjmfqLs5VRWKy93vUUCND+jpJ0a3JEaBuhPQtz6owsd+vapPmewdB04t89/1O/w1cDnyilFU='  
-// });
+var bot = linebot({
+  channelId: '1552347114',
+  channelSecret: 'b76d2078d71935667f27238d8da103c1',
+  channelAccessToken: 'vDHD4iL1z8k1RzzvACAVl2y6fhH22jD2XOfEUGXd9F4J3BbaWAB44eBZAXhuyDF0T0GDaBh1Hsk/Zi4kXyty57Y45JzbdEL+IrAXjmfqLs5VRWKy93vUUCND+jpJ0a3JEaBuhPQtz6owsd+vapPmewdB04t89/1O/w1cDnyilFU='  
+});
 
-// bot.on('message', function(event) {
-//     console.log(event); //把收到訊息的 event 印出來看看
-//   });
+bot.on('message', function(event) {
+    console.log(event); //把收到訊息的 event 印出來看看
+  });
   
   const app = express();
-  // const linebotParser = bot.parser();
-  // app.post('/', linebotParser);
+  const linebotParser = bot.parser();
+  app.post('/', linebotParser);
   
 var server = http.createServer(function(req, res) {
     
